@@ -1,0 +1,38 @@
+mkdir hdcgit//创建文件夹
+cd hdcgit
+git init//创建仓库
+git add gitlearn.txt//保存暂存区
+git commit gitlearn.txt -m "crate file gitlearn.txt"//提交git 默认分支master
+git log //提交记录
+git reset --hard HEAD^ //回退上个版本
+git reset --hard 9789676//回退指定版本
+git reflog //记录每次的git命令
+git status//查看git状态
+git diff HEAD -- gitlearn.txt//查看工作区与版本库区别
+git checkout -- gitlearn.txt//丢弃工作区的修改 未add时，实质用版本库里的版本替换工作区的版本
+git reset HEAD gitlearn.txt//已经add后，暂存区修改撤销
+git rm test.txt//删除文件，再提交
+ssh-keygen -t rsa -C "email"//生成ssd的key对，github上添加key，并新建repository
+git remote add origin git@github.com:xingkonghdc/hdcgit.git//关联远程库，名字origin
+git push origin master//将master分支push到远程仓库
+git clone git@github.com:xingkonghdc/hdcgit.git//克隆远程仓库到本地库
+git checkout -b dev//创建分支dev
+git branch//查看分支
+git checkout master//切换回master分支
+git merge dev//合并分支
+git branch -d dev//删除分支
+git merge --no-ff -m "merge with no-ff" dev//冲突合并
+git stash//保存工作现场
+git stash list//查看工作现场
+git stash pop//恢复并删除现场的备份
+git stash apply stash@{0}//恢复指定现场
+git remote -v//查看远程库信息
+git push origin master//向远程库提交分支master，也可以提交dev
+git checkout -b dev origin/dev//拉取远程库的dev分支到本地
+git branch --set-upstream dev origin/dev//抓取前要本地分支与远程分支关联
+git pull//抓起远程库最新后才能提交
+git tag v1.0//创建标签，在当前分支最新提交上
+sudo adduser git//创建新用户，用于管理git服务器,/home/git/.ssh下面添加用户公钥
+sudo git init --bare hdcgit.git//初始化git仓库
+sudo chown -R git:git hdcgit.git//
+gedit /etc/passwd//编辑文件将git:x:1001:1001:,,,:/home/git:/bin/bash，改为git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell，用来禁止shell登录，安全，管理公钥Gitosis,权限控制Gitolite
