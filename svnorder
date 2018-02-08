@@ -1,6 +1,11 @@
 svnserve -d -r /home/svn/repository
 sudo netstat -anp |grep svnserve
 
+svn add filename
+svn delete filename
+svn commit -m "message"
+svn sw --relocate svn://oldIP/dir svn://newIP/dir
+
 1.创建svn文件夹: sudo mkdir  /home/svn。
 2.定位文件夹: cd  /home/svn 。
 3.创建数据仓库（可以根据需要创建多个）:sudo svnadmin create /home/svn/仓库名称，
