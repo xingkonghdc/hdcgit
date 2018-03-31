@@ -6,4 +6,5 @@ linux order
 3. vi 进入编辑命令行模式，i进入插入模式，esc切回命令行再：进入底行qw
    退出保存
 4.ps -aux 查看进程 kill PID 杀死进程
-
+5.unzip a.zip
+6.tar -xvf studio.tar   tar -xvf studio.tar -C /tmp/extract/   tar -zxvf studio.tar.gz
