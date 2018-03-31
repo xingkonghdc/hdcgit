@@ -5,4 +5,5 @@ linux order
 2. rm -rf dir 删除文件夹及内部内容
 3. vi 进入编辑命令行模式，i进入插入模式，esc切回命令行再：进入底行qw
    退出保存
+4.ps -aux 查看进程 kill PID 杀死进程
 
