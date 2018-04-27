@@ -4,6 +4,7 @@ sudo netstat -anp |grep svnserve
 svn add filename
 svn delete filename
 svn commit -m "message"
+svn info //查看信息
 svn sw --relocate svn://oldIP/dir svn://newIP/dir
 
 1.创建svn文件夹: sudo mkdir  /home/svn。
