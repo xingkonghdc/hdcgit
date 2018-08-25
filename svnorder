@@ -7,6 +7,12 @@ svn commit -m "message"
 svn info //查看信息
 svn sw --relocate svn://oldIP/dir svn://newIP/dir
 
+AS svn 配置 ：
+1.删除项目.svn;
+2.file-setting-version control 清除已有的svn,设置svn路径svn.exe,TortoiseSVN安装时要选材command line;
+3.VCS-import into -version control-share on svn，建立与服务器联系，变绿色;
+4.commite 之后，服务器才有文件，之后服务器可以拉取文件。
+
 1.创建svn文件夹: sudo mkdir  /home/svn。
 2.定位文件夹: cd  /home/svn 。
 3.创建数据仓库（可以根据需要创建多个）:sudo svnadmin create /home/svn/仓库名称，
