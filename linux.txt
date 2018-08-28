@@ -20,3 +20,4 @@ sudo chmod 666 ××× （每个人都有读和写的权限）
 sudo chmod 777 ××× （每个人都有读和写以及执行的权限） 
 
 更新软件 sudo apt update ; sudo apt upgrade
+sudo gedit /etc/profile ;配置java sdk
