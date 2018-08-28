@@ -8,3 +8,15 @@ linux order
 4.ps -aux 查看进程 kill PID 杀死进程
 5.unzip a.zip
 6.tar -xvf studio.tar   tar -xvf studio.tar -C /tmp/extract/   tar -zxvf studio.tar.gz
+
+sudo chmod 600 ××× （只有所有者有读和写的权限） 
+ 
+sudo chmod 644 ××× （所有者有读和写的权限，组用户只有读的权限） 
+ 
+sudo chmod 700 ××× （只有所有者有读和写以及执行的权限） 
+ 
+sudo chmod 666 ××× （每个人都有读和写的权限） 
+ 
+sudo chmod 777 ××× （每个人都有读和写以及执行的权限） 
+
+更新软件 sudo apt update ; sudo apt upgrade
