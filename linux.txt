@@ -25,3 +25,4 @@ sudo gedit /etc/profile ;配置java sdk
 export JAVA_HOME=/usr/hdc_jdk/jdk1.8.0_181
 export CLASSPATH=:.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
 export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
+chmod -R 777 /home/user ;授权
