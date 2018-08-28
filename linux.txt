@@ -21,3 +21,7 @@ sudo chmod 777 ××× （每个人都有读和写以及执行的权限）
 
 更新软件 sudo apt update ; sudo apt upgrade
 sudo gedit /etc/profile ;配置java sdk
+
+export JAVA_HOME=/usr/hdc_jdk/jdk1.8.0_181
+export CLASSPATH=:.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
