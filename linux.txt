@@ -28,3 +28,14 @@ export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 chmod -R 777 /home/user ;授权
 
 1.AS高版本打开DDMS 进入C:\Users\hdc\AppData\Local\Android\Sdk\tools目录，输入 monitor
+
+adb shell 
+adb su
+mkdir sdcard/hdcT
+exit
+exit
+adb push xx.apk sdcard/hdcT
+adb shell
+adb su
+mount -rw -o remount /system
+mv sdcard/hdcT/xx.apk /system/app
