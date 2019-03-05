@@ -29,6 +29,7 @@ chmod -R 777 /home/user ;授权
 
 1.AS高版本打开DDMS 进入C:\Users\hdc\AppData\Local\Android\Sdk\tools目录，输入 monitor
 
+以下是操作手机的adb命令
 adb shell 
 adb su
 mkdir sdcard/hdcT
@@ -39,3 +40,8 @@ adb shell
 adb su
 mount -rw -o remount /system
 mv sdcard/hdcT/xx.apk /system/app
+
+linux查看进程
+查看服务进程：ps aux
+查看服务cpu利用：top
+查看服务对应端口：netstat -nlp
