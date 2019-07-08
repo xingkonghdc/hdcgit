@@ -45,3 +45,6 @@ linux查看进程
 查看服务进程：ps aux
 查看服务cpu利用：top
 查看服务对应端口：netstat -nlp
+
+firewall-cmd --add-port=80/tcp --permanent    打开80端口
+firewall-cmd --reload　　重启防火墙
